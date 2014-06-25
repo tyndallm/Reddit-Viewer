@@ -7,7 +7,6 @@ The main screen of the application is the FrontpageFragment which contains the l
 When a list item is clicked it then Parcels the RedditPost model into an intent which launches another activity and fragment view displaying the title, subreddit and a webview of the actual Reddit post link.   
 
 RedditViewer uses the Google Library Volley to handle the network requests and image downloading.  The application can statically refer to and add requests to the Volley RequestQueue which handle the asynchronous downloading of data.  The app also makes use of a MemoryCache which helps to speed up the app by Lazy loading images and caching them as you scroll through the list view.
-* The library included in the build.gradle is an official Volley repository
 
 The app uses Robolectric for unit tests and originates from the Deckard-gradle project
 
